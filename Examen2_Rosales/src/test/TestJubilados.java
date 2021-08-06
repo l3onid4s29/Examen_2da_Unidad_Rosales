@@ -23,17 +23,14 @@ public class TestJubilados {
         int op1 = 0;
         String tipoJubilacion = null;
         et = new Scanner(System.in);
-        
+
         while (op2 != 6) {
         op2 = 0;
         salarioBase = 0;
         añosAporte = 0;
         Discapacidad = 0;
-        
-            System.out.println("");
-            
-            System.out.println("");
-
+        System.out.println();
+           
             System.out.print("Ingrese el Nombre: ");
             nombre = et.nextLine();
             if (nombre.equals("Exit")) {
@@ -74,7 +71,6 @@ public class TestJubilados {
                         tipoJubilacion = "Jubilacion por vejez";
                         JVejez v = new JVejez();
                         total = v.calcularPorVejez(PI, salarioBase);
-
                     }
                     case 2 -> {
                         tipoJubilacion = "Jubilacion por discapacidad";
@@ -118,12 +114,13 @@ public class TestJubilados {
                                 System.out.println("Jubilacion Patronal:Empresa Publica ");
                             }
                         }
-                      total = p.calcularPorPatronal(PI, salarioBase, op1);
+                        
+                   total = p.calcularPorPatronal(PI, salarioBase, op1);
 
-                    }
+          }
 
-                }
-                System.out.println("");
+       }
+              
                 System.out.println("Pension total de " + j.getNombre() + " es: " + total);
                 System.out.println("");
                 System.out.println("Registro de personas");

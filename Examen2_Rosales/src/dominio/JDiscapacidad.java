@@ -10,7 +10,7 @@ public class JDiscapacidad extends Jubilado {
 
     public double calcularPorDiscapacidad(double PI, double salarioBase, double porDiscapacidad) {
         
-        double Stotal = PI + (salarioBase * (porDiscapacidad * 0.01));
+        double Stotal = PI + (salarioBase *porDiscapacidad *0.01);
         return Stotal;
 
     }
