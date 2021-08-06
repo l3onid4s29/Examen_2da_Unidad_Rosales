@@ -125,15 +125,9 @@ public class TestJubilados {
                 System.out.println("");
                 System.out.println("Registro de personas");
                 jubilado.add(new Jubilado(numCedula, nombre, total, tipoJubilacion));
-                Iterator ite;
-                ite = jubilado.iterator();
-                imprimir(ite);
+                
             }
         }
     }
-                public static void imprimir(Iterator ite) {
-                while (ite.hasNext()) {
-            System.out.println(ite.next());
-        }
-    }
+                
 }
