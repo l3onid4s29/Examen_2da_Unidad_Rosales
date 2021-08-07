@@ -39,7 +39,6 @@ public class Jubilado implements Pnesiones {
         return PI;
     }
 
-    
     public Jubilado(String numCedula, String nombre, double pensionTotal, String tipoJubilacion) {
         this.numCedula = numCedula;
         this.nombre = nombre;
